@@ -109,6 +109,8 @@ set preserveindent
 
 set showmatch " show matching brackets in source code
 set textwidth=79
+" set colorcolumn=+1
+
 set wrap
 
 """"""""""""""""""""""""""""""""""""
@@ -136,6 +138,8 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+" highlight ColorColumn ctermbg=240
 
 " wombat colour scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
