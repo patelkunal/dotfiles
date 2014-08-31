@@ -8,7 +8,10 @@ alias l='ls'
 alias ll='ls -lrth'
 alias lla='ls -lrtha'
 alias la='ls -a'
+alias ..='cd ..'
 
+alias start_tomcat='/opt/tomcat/bin/startup.sh'
+alias stop_tomcat='/opt/tomcat/bin/shutdown.sh'
 
 ########################
 # environment variable settings
@@ -21,6 +24,3 @@ export GRADLE_HOME=/opt/gradle
 export CATALINA_HOME=/opt/tomcat7
 export PATH=$JAVA_HOME/bin:$PATH:$ANT_HOME/bin:$GRADLE_HOME/bin:$M2_HOME/bin
 
-# user level
-export PYTHON_HOME=/opt/python2
-export PATH=$PYTHON_HOME/bin:$PATH
