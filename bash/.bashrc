@@ -16,7 +16,7 @@ alias stop_tomcat='/opt/tomcat/bin/shutdown.sh'
 ########################
 # environment variable settings
 
-# root level
+# root level - common for all users
 export JAVA_HOME=/opt/java
 export ANT_HOME=/opt/ant
 export M2_HOME=/opt/maven
