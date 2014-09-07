@@ -10,8 +10,8 @@ alias lla='ls -lrtha'
 alias la='ls -a'
 alias ..='cd ..'
 
-alias start_tomcat='/opt/tomcat/bin/startup.sh'
-alias stop_tomcat='/opt/tomcat/bin/shutdown.sh'
+alias start-tomcat='/opt/tomcat/bin/startup.sh'
+alias stop-tomcat='/opt/tomcat/bin/shutdown.sh'
 
 ########################
 # environment variable settings
