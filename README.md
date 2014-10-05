@@ -11,7 +11,12 @@ Installation
 
 	cd apps
 	git clone https://github.com/patelkunal/dotfiles --recursive
+
+	vim settings
 	cd ~
 	ln -s apps/dotfiles/vim/.vimrc .vimrc
 	ln -s apps/dotfiles/vim/.vim .vim
-	
+
+	bash settings
+	echo ". $HOME/apps/dotfiles/bash/user.bashrc" >> $HOME/.bashrc
+	sudo echo ". $HOME/apps/dotfiles/bash/root.bashrc" >> /etc/bash.bashrc 
