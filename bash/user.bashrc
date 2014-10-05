@@ -6,8 +6,9 @@
 # alias
 # user level
 alias gs='git status'
-
+alias ga='git add'
 ########################
 # environment variable settings
 # user level
 
+unset GNOME_KEYRING_CONTROL 
