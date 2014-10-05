@@ -9,13 +9,12 @@ dot files - linux configs
 
 Installation
 
-	cd apps
+	cd $HOME/apps
 	git clone https://github.com/patelkunal/dotfiles --recursive
 
 	vim settings
-	cd ~
-	ln -s apps/dotfiles/vim/.vimrc .vimrc
-	ln -s apps/dotfiles/vim/.vim .vim
+	ln -s $HOME/apps/dotfiles/vim/.vimrc $HOME/.vimrc
+	ln -s $HOME/apps/dotfiles/vim/.vim $HOME/.vim
 
 	bash settings
 	echo ". $HOME/apps/dotfiles/bash/user.bashrc" >> $HOME/.bashrc
