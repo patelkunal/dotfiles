@@ -30,6 +30,7 @@
 LIGHT_GREEN="\[\033[1;32m\]"
       WHITE="\[\033[1;37m\]"
  LIGHT_GRAY="\[\033[0;37m\]"
+ LIGHT_PURPLE="\[\033[1;35m\]"
  COLOR_NONE="\[\e[0m\]"
 
 # Detect whether the current directory is a git repository.
@@ -81,7 +82,7 @@ function set_git_branch {
 # previous command.
 function set_prompt_symbol () {
   if test $1 -eq 0 ; then
-      PROMPT_SYMBOL="\$"
+      PROMPT_SYMBOL="${LIGHT_PURPLE}\$${COLOR_NONE}"
   else
       PROMPT_SYMBOL="${LIGHT_RED}\$${COLOR_NONE}"
   fi
