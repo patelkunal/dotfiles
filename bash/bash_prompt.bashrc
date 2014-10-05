@@ -56,16 +56,16 @@ function set_git_branch {
   remote_pattern="# Your branch is (.*) of"
   if [[ ${git_status} =~ ${remote_pattern} ]]; then
     if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote="â†‘"
+      remote="↑"
     else
-      remote="â†“"
+      remote="↓"
     fi
   else
     remote=""
   fi
   diverge_pattern="# Your branch and (.*) have diverged"
   if [[ ${git_status} =~ ${diverge_pattern} ]]; then
-    remote="â†•"
+    remote="↕"
   fi
 
   # Get the name of the branch.
