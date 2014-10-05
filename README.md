@@ -4,7 +4,8 @@ dotfiles
 dot files - linux configs
 
 	1.	VIM configs - .vimrc and related files in .vim
-	2.	shell configs - .bashrc and common /etc/bash.bashrc (mostly for deb systems)
+	2.	shell configs - .bashrc and common /etc/bash.bashrc for all users (mostly for deb systems)
+	3.	python configs - python installaion scripts with default environments
 
 Installation
 
