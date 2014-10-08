@@ -18,4 +18,4 @@ Installation
 
 	bash settings
 	echo ". $HOME/apps/dotfiles/bash/user.bashrc" >> $HOME/.bashrc
-	sudo echo ". $HOME/apps/dotfiles/bash/root.bashrc" >> /etc/bash.bashrc 
+	echo ". $HOME/apps/dotfiles/bash/root.bashrc" | sudo tee -a /etc/bash.bashrc 
