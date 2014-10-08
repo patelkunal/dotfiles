@@ -68,11 +68,15 @@ function set_git_branch {
     remote="↕"
   fi
 
+  # Since this method is git's version dependent, replacing it with generic command
   # Get the name of the branch.
-  branch_pattern="^# On branch ([^${IFS}]*)"
-  if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    branch=${BASH_REMATCH[1]}
-  fi
+  # branch_pattern="^# On branch ([^${IFS}]*)"
+  # if [[ ${git_status} =~ ${branch_pattern} ]]; then
+    # branch=(${BASH_REMATCH[1]})
+	# fi
+
+  # this method is version independent
+  branch="$(git rev-parse --abbrev-ref HEAD)"
 
   # Set the final branch string.
   BRANCH="${state}(${branch})${remote}${COLOR_NONE} "
