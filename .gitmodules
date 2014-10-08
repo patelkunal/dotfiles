@@ -7,3 +7,6 @@
 [submodule "vim/.vim/bundle/vim-fugitive"]
 	path = vim/.vim/bundle/vim-fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bash/bash_prompt"]
+	path = bash/bash_prompt
+	url = https://gist.github.com/52da959b676439ffc614.git
