@@ -1,5 +1,5 @@
 # customized command prompt
-. $HOME/apps/dotfiles/bash/bash_prompt.bashrc
+. $HOME/apps/dotfiles/bash/bash_prompt/bash_prompt.bashrc
 
 # alias
 
