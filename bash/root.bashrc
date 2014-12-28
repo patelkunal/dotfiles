@@ -19,9 +19,10 @@ alias tail-tomcat-log='tail -100f /opt/tomcat/logs/catalina.out'
 
 # root level - common for all users
 export JAVA_HOME=/opt/java
+export GROOVY_HOME=/opt/groovy
 export ANT_HOME=/opt/ant
 export M2_HOME=/opt/maven
 export GRADLE_HOME=/opt/gradle
 export CATALINA_HOME=/opt/tomcat
-export PATH=$JAVA_HOME/bin:$PATH:$ANT_HOME/bin:$GRADLE_HOME/bin:$M2_HOME/bin
+export PATH=$JAVA_HOME/bin:$PATH:$ANT_HOME/bin:$GRADLE_HOME/bin:$M2_HOME/bin:$GROOVY_HOME/bin
 
