@@ -10,3 +10,6 @@
 [submodule "bash/bash_prompt"]
 	path = bash/bash_prompt
 	url = https://gist.github.com/52da959b676439ffc614.git
+[submodule "vim/.vim/bundle/vim-gitgutter"]
+	path = vim/.vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
