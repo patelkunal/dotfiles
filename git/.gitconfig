@@ -1,0 +1,21 @@
+[alias]
+	st = status -sb
+	lg = log --color --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lga = log --color --graph --all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	co = checkout
+	df = diff
+	cmt = commit
+[user]
+[http]
+	sslVerify = false
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[merge]
+	tool = meld
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[filter "trimWhitespace"]
+	clean = git-stripspace
