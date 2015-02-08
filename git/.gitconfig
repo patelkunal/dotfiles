@@ -19,3 +19,5 @@
 	prompt = false
 [filter "trimWhitespace"]
 	clean = git-stripspace
+[push]
+	default = matching
