@@ -1,11 +1,11 @@
-[submodule "vim/.vim/bundle/jedi-vim"]
-	path = vim/.vim/bundle/jedi-vim
+[submodule "vim/vim/bundle/jedi-vim"]
+	path = vim/vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "vim/.vim/bundle/vim-airline"]
-	path = vim/.vim/bundle/vim-airline
+[submodule "vim/vim/bundle/vim-airline"]
+	path = vim/vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "vim/.vim/bundle/vim-fugitive"]
-	path = vim/.vim/bundle/vim-fugitive
+[submodule "vim/vim/bundle/vim-fugitive"]
+	path = vim/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bash/bash_prompt"]
 	path = bash/bash_prompt
