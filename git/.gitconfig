@@ -4,6 +4,7 @@
 	lga = log --color --graph --all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	co = checkout
 	df = diff
+	dfc = diff --cached
 	cmt = commit
 [user]
 [http]
