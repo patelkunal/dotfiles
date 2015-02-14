@@ -7,7 +7,6 @@
 	df = diff
 	dfc = diff --cached
 	cmt = commit
-[user]
 [http]
 	sslVerify = false
 [color]
@@ -23,3 +22,6 @@
 	clean = git-stripspace
 [push]
 	default = matching
+[user]
+	name = kppatel
+	email = kppatel@verisign.com
