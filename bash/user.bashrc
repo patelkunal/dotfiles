@@ -7,6 +7,7 @@
 # user level
 alias gs='git status'
 alias ga='git add'
+alias got='git'
 alias venv='virtualenv'
 
 ########################

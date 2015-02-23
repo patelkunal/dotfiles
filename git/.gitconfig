@@ -2,11 +2,12 @@
 	st = status -sb
 	sts = status
 	lg = log -10 --color --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lga = log --color --graph --all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lga = log --color --graph --all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an:%ae>%Creset' --abbrev-commit
 	co = checkout
 	df = diff
 	dfc = diff --cached
 	cmt = commit
+	dft = difftool
 [http]
 	sslVerify = false
 [color]
@@ -25,3 +26,7 @@
 [user]
 	name = kppatel
 	email = kppatel@verisign.com
+[difftool]
+	prompt = false
+[diff]
+	tool = gvimdiff
