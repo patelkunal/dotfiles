@@ -47,29 +47,40 @@ function set_git_branch {
   git_status="$(git status 2> /dev/null)"
 
   # Set color based on clean/staged/dirty.
-  if [[ ${git_status} -e "working directory clean" ]]; then
+  # if [[ ${git_status} -e "working directory clean" ]]; then
+  #   state="${GREEN}"
+  # elif [[ ${git_status} -e "Changes to be committed" ]]; then
+  #   state="${YELLOW}"
+  # else
+  #   state="${LIGHT_RED}"
+  # fi
+  clean_flag=`echo $git_status | grep -c "working directory clean"`
+  staging_flag=`echo $git_status | grep -c "Changes to be committed"`
+  
+  if [[ $clean_flag == 1 ]]; then
     state="${GREEN}"
-  elif [[ ${git_status} -e "Changes to be committed" ]]; then
-    state="${YELLOW}"
+  elif [[ $staging_flag == 1 ]]; then
+    state="$YELLOW"
   else
     state="${LIGHT_RED}"
   fi
 
   # Set arrow icon based on status against remote.
-  remote_pattern="# Your branch is (.*) of"
-  if [[ ${git_status} =~ ${remote_pattern} ]]; then
-    if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote="â†‘"
-    else
-      remote="â†“"
-    fi
-  else
-    remote=""
-  fi
-  diverge_pattern="# Your branch and (.*) have diverged"
-  if [[ ${git_status} =~ ${diverge_pattern} ]]; then
-    remote="â†•"
-  fi
+  # remote_pattern="# Your branch is (.*) of"
+  # if [[ ${git_status} =~ ${remote_pattern} ]]; then
+  #   if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
+  #     remote="â†‘"
+  #   else
+  #     remote="â†“"
+  #   fi
+  # else
+  #   remote=""
+  # fi
+  # diverge_pattern="# Your branch and (.*) have diverged"
+  # if [[ ${git_status} =~ ${diverge_pattern} ]]; then
+  #   remote="â†•"
+  # fi
+  remote=""
 
   # Since this method is git's version dependent, replacing it with generic command
   # Get the name of the branch.
@@ -122,9 +133,9 @@ function set_bash_prompt () {
 
   # Set the bash prompt variable.
   PS1="
-${PYTHON_VIRTUALENV}${GREEN}\u@\h ${YELLOW}\w${COLOR_NONE} ${BRANCH}
-${PROMPT_SYMBOL} "
+${PYTHON_VIRTUALENV}${YELLOW}\w${COLOR_NONE} ${BRANCH}${PROMPT_SYMBOL} "
 }
 
 # Tell bash to execute this function just before displaying its prompt.
+# echo $(set_bash_prompt)
 PROMPT_COMMAND=set_bash_prompt
