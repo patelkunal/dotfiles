@@ -14,4 +14,7 @@ alias venv='virtualenv'
 # environment variable settings
 # user level
 
-unset GNOME_KEYRING_CONTROL 
+unset GNOME_KEYRING_CONTROL
+
+export PYHOME=/opt/mconda-py3
+export PATH=$PYHOME/bin:$PATH
