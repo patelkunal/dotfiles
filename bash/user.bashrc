@@ -8,6 +8,7 @@
 alias gs='git status'
 alias ga='git add'
 alias got='git'
+alias gut='git'
 alias venv='virtualenv'
 
 ########################
