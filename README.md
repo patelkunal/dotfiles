@@ -22,3 +22,12 @@ dotfiles
 
 	git settings
 	ln -sf $HOME/apps/dotfiles/git/.gitconfig $HOME/.gitconfig
+
+####Note
+
+I am using Non-ASCII characters in bash-prompt.sh.
+In debian, please enable locale with UTF-8. 
+```
+dpkg -l locales
+/usr/sbin/dpkg-reconfigure locales # and select en_US with UTF-8
+````
