@@ -15,6 +15,9 @@ alias venv='virtualenv'
 # environment variable settings
 # user level
 
+
+source /etc/bash_completion.d/git
+
 unset GNOME_KEYRING_CONTROL
 
 export PYHOME=/opt/miniconda3
