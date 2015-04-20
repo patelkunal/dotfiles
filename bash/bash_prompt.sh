@@ -121,9 +121,7 @@ function set_bash_prompt () {
   fi
 
   # Set the bash prompt variable.
-  PS1="
-${PYTHON_VIRTUALENV}${GREEN}\u@\h ${YELLOW}\w${COLOR_NONE} ${BRANCH}
-${PROMPT_SYMBOL} "
+  PS1="${PYTHON_VIRTUALENV}${GREEN}\u: ${YELLOW}\w${COLOR_NONE} ${BRANCH}${PROMPT_SYMBOL} "
 }
 
 # Tell bash to execute this function just before displaying its prompt.
