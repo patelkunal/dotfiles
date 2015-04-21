@@ -20,5 +20,7 @@ source /etc/bash_completion.d/git
 
 unset GNOME_KEYRING_CONTROL
 
-export PYHOME=/opt/miniconda3
-export PATH=$PYHOME/bin:$PATH
+export CONDAHOME=/opt/miniconda3
+export LD_LIBRARY_PATH=$CONDAHOME/lib:$LD_LIBRARY_PATH
+
+export PATH=$CONDAHOME/bin:$PATH
