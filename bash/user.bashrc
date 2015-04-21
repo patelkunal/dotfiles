@@ -21,7 +21,7 @@ source /etc/bash_completion.d/git
 unset GNOME_KEYRING_CONTROL
 unset SSH_ASKPASS
 
-export CONDAHOME=/opt/python
-export LD_LIBRARY_PATH=$CONDAHOME/lib:$LD_LIBRARY_PATH
+export PYHOME=/opt/python
+export LD_LIBRARY_PATH=$PYHOME/lib:$LD_LIBRARY_PATH
 
-export PATH=$CONDAHOME/bin:$PATH
+export PATH=$PYHOME/bin:$PATH
