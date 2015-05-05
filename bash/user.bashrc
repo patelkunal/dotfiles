@@ -16,7 +16,8 @@ alias venv='virtualenv'
 # user level
 
 
-source /etc/bash_completion.d/git
+# Not required after upgrading to debian 8 
+# source /etc/bash_completion.d/git
 
 unset GNOME_KEYRING_CONTROL
 unset SSH_ASKPASS
