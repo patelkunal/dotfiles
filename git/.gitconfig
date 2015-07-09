@@ -27,8 +27,8 @@
 [push]
 	default = matching
 [user]
-	name = kppatel
-	email = kppatel@verisign.com
+	name = Kunal Patel
+	email = kunal_patel@symantec.com 
 [difftool]
 	prompt = false
 [diff]
