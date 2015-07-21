@@ -15,14 +15,26 @@ alias venv='virtualenv'
 # environment variable settings
 # user level
 
+alias l='ls'
+alias ll='ls -lrth'
+alias lla='ls -lrha'
+alias la='ls -a'
+alias ..='cd ..'
 
-# Not required after upgrading to debian 8 
-# source /etc/bash_completion.d/git
 
-unset GNOME_KEYRING_CONTROL
-unset SSH_ASKPASS
+alias mysqld_start='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
+alias mysqld_stop='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
 
-#export PYHOME=/opt/python
-#export LD_LIBRARY_PATH=$PYHOME/lib:$LD_LIBRARY_PATH
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+	. `brew --prefix`/etc/bash_completion
+fi
 
-#export PATH=$PYHOME/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+export M2_HOME=/opt/apache-maven
+export GRADLE_HOME=/opt/gradle
+export CATALINA_HOME=/opt/tomcat
+export MYSQL_HOME=/usr/local/mysql
+export PATH=$JAVA_HOME/bin:/usr/local/bin:$PATH:$M2_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$MYSQL_HOME/bin
+
+# . /Users/kunal_patel/apps/dotfiles/bash/user.bashrc
+
