@@ -29,7 +29,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 	. `brew --prefix`/etc/bash_completion
 fi
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/current.jdk/Contents/Home
 export M2_HOME=/opt/apache-maven
 export GRADLE_HOME=/opt/gradle
 export CATALINA_HOME=/opt/tomcat
