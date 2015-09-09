@@ -32,9 +32,11 @@ fi
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/current.jdk/Contents/Home
 export M2_HOME=/opt/apache-maven
 export GRADLE_HOME=/opt/gradle
+export SCALA_HOME=/opt/scala
 export CATALINA_HOME=/opt/tomcat
 export MYSQL_HOME=/usr/local/mysql
-export PATH=$JAVA_HOME/bin:/usr/local/bin:$PATH:$M2_HOME/bin:$GRADLE_HOME/bin:$CATALINA_HOME/bin:$MYSQL_HOME/bin
+export PY3_HOME=/opt/py3
+export PATH=$JAVA_HOME/bin:$PY3_HOME/bin:/usr/local/bin:$PATH:$M2_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$CATALINA_HOME/bin:$MYSQL_HOME/bin
 
 # . /Users/kunal_patel/apps/dotfiles/bash/user.bashrc
 
