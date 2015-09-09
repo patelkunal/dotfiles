@@ -18,7 +18,7 @@
 	status = auto
 	branch = auto
 [merge]
-	tool = meld
+	#tool = meld
 	conflictstyle = diff3
 [mergetool]
 	prompt = false
@@ -28,10 +28,18 @@
 	default = matching
 [user]
 	name = Kunal Patel
-	email = kunal_patel@symantec.com 
+	email = kunal_patel@symantec.com
 [difftool]
 	prompt = false
 [diff]
 	tool = gvimdiff
 [credential]
 	helper = cache --timeout=30000
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[core]
+	excludesfile = /Users/kunal_patel/.gitignore_global
