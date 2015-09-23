@@ -43,3 +43,4 @@
 	trustExitCode = true
 [core]
 	excludesfile = /Users/kunal_patel/.gitignore_global
+	editor = /usr/bin/vim
