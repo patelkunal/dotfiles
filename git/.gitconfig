@@ -35,3 +35,5 @@
 	tool = gvimdiff
 [credential]
 	helper = cache --timeout=30000
+[core]
+	editor = /usr/bin/vim
