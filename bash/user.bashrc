@@ -38,5 +38,3 @@ export MYSQL_HOME=/usr/local/mysql
 export PY3_HOME=/opt/py3
 export PATH=$JAVA_HOME/bin:$PY3_HOME/bin:/usr/local/bin:$PATH:$M2_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$CATALINA_HOME/bin:$MYSQL_HOME/bin
 
-# . /Users/kunal_patel/apps/dotfiles/bash/user.bashrc
-
