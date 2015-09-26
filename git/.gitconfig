@@ -18,7 +18,6 @@
 	status = auto
 	branch = auto
 [merge]
-	tool = meld
 	conflictstyle = diff3
 [mergetool]
 	prompt = false
@@ -28,7 +27,7 @@
 	default = matching
 [user]
 	name = Kunal Patel
-	email = kunal_patel@symantec.com 
+	email = kunal_patel@symantec.com
 [difftool]
 	prompt = false
 [diff]
