@@ -35,12 +35,5 @@
 	tool = gvimdiff
 [credential]
 	helper = cache --timeout=30000
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [core]
-	excludesfile = /Users/kunal_patel/.gitignore_global
 	editor = /usr/bin/vim
