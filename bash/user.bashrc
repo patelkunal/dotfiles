@@ -10,6 +10,8 @@ alias ga='git add'
 alias got='git'
 alias gut='git'
 alias venv='virtualenv'
+alias pip='python3 -m pip'
+alias python='python3'
 
 ########################
 # environment variable settings
