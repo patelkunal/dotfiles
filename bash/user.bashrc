@@ -3,6 +3,8 @@
 . $HOME/apps/dotfiles/bash/bash_prompt.sh
 # . $HOME/apps/dotfiles/bash/root.bashrc
 
+source $HOME/apps/dotfiles/git/git-completion.bash
+
 # alias
 # user level
 alias gs='git status'
