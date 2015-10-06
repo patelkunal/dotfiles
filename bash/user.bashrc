@@ -34,7 +34,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/current.jdk/Contents/Home
-export M2_HOME=/opt/apache-maven
+export M2_HOME=/opt/maven
 export GRADLE_HOME=/opt/gradle
 export SCALA_HOME=/opt/scala
 export CATALINA_HOME=/opt/tomcat
