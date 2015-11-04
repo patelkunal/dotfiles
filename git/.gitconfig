@@ -24,7 +24,7 @@
 [filter "trimWhitespace"]
 	clean = git-stripspace
 [push]
-	default = matching
+	default = simple
 [user]
 	name = Kunal Patel
 	email = kunal_patel@symantec.com
