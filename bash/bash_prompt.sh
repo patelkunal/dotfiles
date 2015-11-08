@@ -45,10 +45,7 @@ function is_git_repository {
 function set_git_branch {
   # Capture the output of the "git status" command.
   git_status="$(git status 2> /dev/null)"
-  local_branch="$(git name-rev --name-only HEAD)"
-  # remote_branch="origin/${local_branch}"
-  remote_branch=`git config "branch.${branch}.remote"`
-  echo "${local_branch}...${remote_branch}"
+
   # Set color based on clean/staged/dirty.
   if [[ ${git_status} =~ "working directory clean" ]]; then
     state="${GREEN}"
@@ -74,14 +71,15 @@ function set_git_branch {
     remote="↕"
   fi
 
-  nbr_commits="$(git rev-list --left-right --count $local_branch...$remote_branch)"
-  echo $nbr_commits
-
   # this method is version independent
   branch="$(git rev-parse --abbrev-ref HEAD)"
 
+  nbr_commits_ahead="$(git rev-list --count origin..$branch)"
+  nbr_commits_behind="$(git rev-list --count $branch..origin)"
+  # echo "$nbr_commits_ahead..$nbr_commits_behind"
+
   # Set the final branch string.
-  BRANCH="${state}(${branch})${remote}${COLOR_NONE} "
+  BRANCH="${state}(${branch}|+$nbr_commits_ahead|-$nbr_commits_behind)${remote}${COLOR_NONE} "
 }
 
 # Return the prompt symbol to use, colorized based on the return value of the
