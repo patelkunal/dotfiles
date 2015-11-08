@@ -79,7 +79,7 @@ function set_git_branch {
   # echo "$nbr_commits_ahead..$nbr_commits_behind"
 
   # Set the final branch string.
-  BRANCH="${state}(${branch}|+$nbr_commits_ahead|-$nbr_commits_behind)${remote}${COLOR_NONE} "
+  BRANCH="${state}(${branch}|↑$nbr_commits_ahead|↓$nbr_commits_behind)${remote}${COLOR_NONE} "
 }
 
 # Return the prompt symbol to use, colorized based on the return value of the
