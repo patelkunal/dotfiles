@@ -45,7 +45,10 @@ function is_git_repository {
 function set_git_branch {
   # Capture the output of the "git status" command.
   git_status="$(git status 2> /dev/null)"
-
+  local_branch="$(git name-rev --name-only HEAD)"
+  # remote_branch="origin/${local_branch}"
+  remote_branch=`git config "branch.${branch}.remote"`
+  echo "${local_branch}...${remote_branch}"
   # Set color based on clean/staged/dirty.
   if [[ ${git_status} =~ "working directory clean" ]]; then
     state="${GREEN}"
@@ -71,12 +74,8 @@ function set_git_branch {
     remote="↕"
   fi
 
-  # Since this method is git's version dependent, replacing it with generic command
-  # Get the name of the branch.
-  # branch_pattern="^# On branch ([^${IFS}]*)"
-  # if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    # branch=(${BASH_REMATCH[1]})
-  # fi
+  nbr_commits="$(git rev-list --left-right --count $local_branch...$remote_branch)"
+  echo $nbr_commits
 
   # this method is version independent
   branch="$(git rev-parse --abbrev-ref HEAD)"
