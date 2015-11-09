@@ -56,9 +56,9 @@ function set_git_branch {
   fi
 
   # this method is version independent
-  # branch="$(git rev-parse --abbrev-ref HEAD)"
+  local branch="$(git rev-parse --abbrev-ref HEAD)"
   nbr_commits_diff=""
-  local branch="$(git name-rev --name-only HEAD)"
+
   remote_name="$(git config branch.$branch.remote)"
   remote_name_ret_code=$?
 
