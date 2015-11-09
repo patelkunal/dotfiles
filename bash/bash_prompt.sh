@@ -55,34 +55,31 @@ function set_git_branch {
     state="${LIGHT_RED}"
   fi
 
-  # Set arrow icon based on status against remote.
-  remote_pattern="# Your branch is (.*) of"
-  if [[ ${git_status} =~ ${remote_pattern} ]]; then
-    if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote="↑"
-    else
-      remote="↓"
-    fi
-  else
-    remote=""
-  fi
-  diverge_pattern="# Your branch and (.*) have diverged"
-  if [[ ${git_status} =~ ${diverge_pattern} ]]; then
-    remote="↕"
-  fi
-
-  # Since this method is git's version dependent, replacing it with generic command
-  # Get the name of the branch.
-  # branch_pattern="^# On branch ([^${IFS}]*)"
-  # if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    # branch=(${BASH_REMATCH[1]})
-  # fi
-
   # this method is version independent
-  branch="$(git rev-parse --abbrev-ref HEAD)"
+  # branch="$(git rev-parse --abbrev-ref HEAD)"
+  nbr_commits_diff=""
+  local branch="$(git name-rev --name-only HEAD)"
+  remote_name="$(git config branch.$branch.remote)"
+  remote_name_ret_code=$?
+
+  if [[ $remote_name_ret_code -eq 0 ]]; then
+      remote="$remote_name/$branch"
+      local nbr_commits_behind="$(git rev-list --count $branch..$remote)"
+      local nbr_commits_ahead="$(git rev-list --count $remote..$branch)"
+      if [ $nbr_commits_ahead -ne "0" ] && [ $nbr_commits_behind -ne "0" ]; then
+          nbr_commits_diff="|+$nbr_commits_ahead|-$nbr_commits_behind"
+      elif [ $nbr_commits_ahead -ne "0" ] && [ $nbr_commits_behind -eq "0" ]; then
+          nbr_commits_diff="|+$nbr_commits_ahead"
+      elif [ $nbr_commits_ahead -eq "0" ] && [ $nbr_commits_behind -ne "0" ]; then
+          nbr_commits_diff="|-$nbr_commits_behind"
+      fi
+  else
+      # leave me alone
+      echo "(no remote available)" > /dev/null
+  fi
 
   # Set the final branch string.
-  BRANCH="${state}(${branch})${remote}${COLOR_NONE} "
+  BRANCH="${state}(${branch}${nbr_commits_diff})${COLOR_NONE} "
 }
 
 # Return the prompt symbol to use, colorized based on the return value of the
