@@ -1,7 +1,7 @@
 [alias]
 	st = status -sb
 	sts = status
-	lg = log -10 --color --graph -all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log -10 --color --graph --all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lga = log --color --graph --all --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an:%ae>%Creset' --abbrev-commit
 	co = checkout
 	df = diff
