@@ -33,7 +33,7 @@
 [difftool]
 	prompt = false
 [diff]
-	tool = gvimdiff
+	tool = vimdiff 
 [credential]
 	helper = cache --timeout=30000
 [core]
