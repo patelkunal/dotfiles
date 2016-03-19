@@ -12,8 +12,6 @@ alias ga='git add'
 alias got='git'
 alias gut='git'
 alias venv='virtualenv'
-alias pip='python3 -m pip'
-alias python='python3'
 
 ########################
 # environment variable settings
@@ -26,14 +24,7 @@ alias la='ls -a'
 alias ..='cd ..'
 
 
-alias mysqld_start='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
-alias mysqld_stop='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-	. `brew --prefix`/etc/bash_completion
-fi
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/current.jdk/Contents/Home
+export JAVA_HOME=/opt/java
 export M2_HOME=/opt/maven
 export GRADLE_HOME=/opt/gradle
 export SCALA_HOME=/opt/scala
