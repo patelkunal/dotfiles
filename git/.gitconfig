@@ -39,7 +39,8 @@
 	helper = cache --timeout=30000
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /Users/kunal_patel/.gitignore_global
+	#excludesfile = /Users/kunal_patel/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
