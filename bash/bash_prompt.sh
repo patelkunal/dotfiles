@@ -104,6 +104,7 @@ function set_virtualenv () {
   else
       PYTHON_VIRTUALENV="${BLUE}[`basename \"$PY_VENV\"`]${COLOR_NONE} "
   fi
+  unset PY_VENV
 }
 
 # Set the full bash prompt.
