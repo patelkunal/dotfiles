@@ -151,13 +151,6 @@ color wombat256mod
 """""""""""""""""""""""""""""""""""""""""""""""
 """ plugin related commands
 
-" setting up pathogen for vim plugin managment
-" mkdir -p ~/.vim/autoload ~/.vim/bundle
-" curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
-" call pathogen#runtime_append_all_bundles()
-
 " settings for vim-powerline
 " git clone git://github.com/Lokaltog/vim-powerline.git
 set laststatus=2
@@ -183,3 +176,16 @@ autocmd FileType python setlocal completeopt-=preview
 
 " gradle related commnads
 au BufNewFile,BufRead *.gradle set filetype=groovy
+
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'cjrh/vim-conda'
+call vundle#end() 
+filetype plugin indent on
+
