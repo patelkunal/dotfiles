@@ -187,7 +187,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'davidhalter/jedi-vim'
 
-Plugin 'patelkunal/vim-conda'
+"Plugin 'patelkunal/vim-conda'
 
 Plugin 'vim-airline/vim-airline'
 
