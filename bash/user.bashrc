@@ -11,6 +11,8 @@ alias gs='git status'
 alias ga='git add'
 alias got='git'
 alias gut='git'
+alias dck='docker'
+alias dckr='docker'
 
 ########################
 # environment variable settings

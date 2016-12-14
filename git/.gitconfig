@@ -29,7 +29,7 @@
 [push]
 	default = simple
 [user]
-	name = Kunal Patel
+	name = kunal_patel
 	email = patelkunal89@gmail.com
 [difftool]
 	prompt = false
@@ -39,7 +39,8 @@
 	helper = cache --timeout=30000
 [core]
 	editor = /usr/bin/vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/kunal_patel/.gitignore_global
+	autocrlf = input
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
