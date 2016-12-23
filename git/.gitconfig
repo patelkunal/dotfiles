@@ -28,9 +28,6 @@
 	clean = git-stripspace
 [push]
 	default = simple
-[user]
-	name = kunal_patel
-	email = patelkunal89@gmail.com
 [difftool]
 	prompt = false
 [diff]
