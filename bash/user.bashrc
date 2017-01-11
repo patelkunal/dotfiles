@@ -30,12 +30,7 @@ if [[ "$(uname)" == "Darwin" && -f `brew --prefix`/etc/bash_completion ]]; then
 	. `brew --prefix`/etc/bash_completion
 fi
 
-export JAVA_HOME=/opt/java
-export M2_HOME=/opt/maven
-export GRADLE_HOME=/opt/gradle
-export SCALA_HOME=/opt/scala
 export CATALINA_HOME=$HOME/apps/tomcat
-export MYSQL_HOME=/usr/local/mysql
 export PYTHON_HOME=/opt/py3
-export PATH=$JAVA_HOME/bin:$PYTHON_HOME/bin:/usr/local/bin:$PATH:$M2_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$CATALINA_HOME/bin:$MYSQL_HOME/bin
+export PATH=$PYTHON_HOME/bin:/usr/local/bin:$PATH:$CATALINA_HOME/bin
 
