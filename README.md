@@ -20,7 +20,7 @@ dotfiles
 	echo ". $HOME/apps/dotfiles/bash/user.bashrc" >> $HOME/.bashrc
 
 	git settings
-	ln -sf $HOME/apps/dotfiles/git/.gitconfig $HOME/.gitconfig
+	ln -sf $HOME/apps/dotfiles/git/gitconfig $HOME/.gitconfig
 
 ####Note
 
