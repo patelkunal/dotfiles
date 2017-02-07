@@ -1,7 +1,8 @@
 # customized command prompt
 . $HOME/apps/dotfiles/bash/bash_prompt.sh
 
-source $HOME/apps/dotfiles/git/git-completion.bash
+source $HOME/apps/dotfiles/bash_completion.d/git-completion.bash
+source $HOME/apps/dotfiles/bash_completion.d/gradle-completion.bash
 
 # alias
 # user level
