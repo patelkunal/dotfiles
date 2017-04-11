@@ -94,8 +94,8 @@ function set_prompt_symbol () {
 
 # Determine active Python virtualenv details.
 function set_virtualenv () {
-  if [ -n "$CONDA_ENV_PATH" ]; then
-     PY_VENV=$CONDA_ENV_PATH
+  if [ -n "$CONDA_DEFAULT_ENV" ]; then
+     PY_VENV=$CONDA_DEFAULT_ENV
   elif [ -n "$VIRTUAL_ENV" ]; then
 	 PY_VENV=$VIRTUAL_ENV
   fi
