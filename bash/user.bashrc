@@ -12,6 +12,7 @@ alias got='git'
 alias gut='git'
 alias dck='docker'
 alias dckr='docker'
+alias dckrclean='docker rm $(docker ps -a -q)'
 
 ########################
 # environment variable settings
