@@ -32,3 +32,4 @@ fi
 
 export PYTHON_HOME=$HOME/apps/minicoda3
 export PATH=$PYTHON_HOME/bin:/usr/local/bin:$PATH
+
