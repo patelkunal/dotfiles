@@ -30,6 +30,6 @@ if [[ "$(uname)" == "Darwin" && -f `brew --prefix`/etc/bash_completion ]]; then
 	. `brew --prefix`/etc/bash_completion
 fi
 
-export PYTHON_HOME=$HOME/apps/minicoda3
-export PATH=$PYTHON_HOME/bin:/usr/local/bin:$PATH
+# export PYTHON_HOME=$HOME/apps/minicoda3
+export PATH=/usr/local/bin:$PATH
 
