@@ -26,9 +26,9 @@ alias ..='cd ..'
 alias tailf='tail -500f'
 
 # mac specific stuff
-if [[ "$(uname)" == "Darwin" && -f `brew --prefix`/etc/bash_completion ]]; then
-	. `brew --prefix`/etc/bash_completion
-fi
+#if [[ "$(uname)" == "Darwin" && -f `brew --prefix`/etc/bash_completion ]]; then
+#	. `brew --prefix`/etc/bash_completion
+#fi
 
 # export PYTHON_HOME=$HOME/apps/minicoda3
 export PATH=/usr/local/bin:$PATH
