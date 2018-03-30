@@ -28,8 +28,16 @@
     "Red Component" : "0.9372549",
     "Blue Component" : "0.1607843"
   },
-  "Transparency" : 0.1315057899746193,
-  "Guid" : "C81287A1-5687-46AA-B8F9-C2FD5DE9FD3B",
+  "Ansi 3 Color" : {
+    "Green Component" : "0.627451",
+    "Red Component" : "0.7686275",
+    "Blue Component" : "0"
+  },
+  "Ansi 5 Color" : {
+    "Green Component" : "0.3137255",
+    "Red Component" : "0.4588235",
+    "Blue Component" : "0.4823529"
+  },
   "Rows" : 25,
   "Default Bookmark" : "No",
   "Cursor Guide Color" : {
@@ -40,7 +48,7 @@
     "Green Component" : 0.9268307089805603
   },
   "Non-ASCII Anti Aliased" : true,
-  "Use Bright Bold" : true,
+  "Use Bright Bold" : false,
   "Ansi 10 Color" : {
     "Green Component" : "0.8862745",
     "Red Component" : "0.5411764999999999",
@@ -89,7 +97,7 @@
   "ASCII Anti Aliased" : true,
   "Non Ascii Font" : "Monaco 12",
   "Vertical Spacing" : 1,
-  "Use Bold Font" : true,
+  "Use Bold Font" : false,
   "Option Key Sends" : 0,
   "Selected Text Color" : {
     "Green Component" : "0",
@@ -280,6 +288,7 @@
     }
   },
   "Window Type" : 0,
+  "Cursor Type" : 2,
   "Background Image Location" : "",
   "Blur" : false,
   "Badge Color" : {
@@ -323,30 +332,21 @@
     "Red Component" : "0.8",
     "Blue Component" : "0"
   },
-  "Horizontal Spacing" : 1,
-  "Ansi 3 Color" : {
-    "Green Component" : "0.627451",
-    "Red Component" : "0.7686275",
-    "Blue Component" : "0"
-  },
-  "Ansi 4 Color" : {
-    "Green Component" : "0.3960784",
-    "Red Component" : "0.2039216",
-    "Blue Component" : "0.6431373"
-  },
-  "Right Option Key Sends" : 0,
-  "Ansi 6 Color" : {
-    "Green Component" : "0.5960785",
-    "Red Component" : "0.02352941",
-    "Blue Component" : "0.6039215999999999"
-  },
   "Custom Directory" : "No",
-  "Normal Font" : "Monaco 13",
   "Ansi 2 Color" : {
     "Green Component" : "0.6039215999999999",
     "Red Component" : "0.3058824",
     "Blue Component" : "0.02352941"
   },
+  "Transparency" : 0.1315057899746193,
+  "Guid" : "C81287A1-5687-46AA-B8F9-C2FD5DE9FD3B",
+  "Ansi 6 Color" : {
+    "Green Component" : "0.5960785",
+    "Red Component" : "0.02352941",
+    "Blue Component" : "0.6039215999999999"
+  },
+  "Horizontal Spacing" : 1,
+  "Normal Font" : "SourceCodePro-Regular 15",
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -354,9 +354,10 @@
     "Alpha Component" : 1,
     "Green Component" : 0.3591606020927429
   },
-  "Ansi 5 Color" : {
-    "Green Component" : "0.3137255",
-    "Red Component" : "0.4588235",
-    "Blue Component" : "0.4823529"
-  }
+  "Ansi 4 Color" : {
+    "Green Component" : "0.3960784",
+    "Red Component" : "0.2039216",
+    "Blue Component" : "0.6431373"
+  },
+  "Right Option Key Sends" : 0
 }
