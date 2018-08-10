@@ -176,7 +176,7 @@ let g:jedi#auto_vim_configuration = 1
 " let g:jedi#popup_select_first = 0
 
 " python related commands
-autocmd FileType python setlocal completeopt-=preview ts=2 sts=2 sw=2
+autocmd FileType python setlocal completeopt-=preview ts=4 sts=4 sw=4
 
 " gradle related commnads
 au BufNewFile,BufRead *.gradle set filetype=groovy
