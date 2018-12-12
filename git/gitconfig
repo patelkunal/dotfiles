@@ -17,7 +17,7 @@
 [http]
 	sslVerify = false
 [include]
-	path = ~/.global.gitconfig
+	path = "%USERPROFILE%/.global.gitconfig"
 [color]
 	diff = auto
 	status = auto
@@ -35,10 +35,10 @@
 [diff]
 	tool = vimdiff 
 [credential]
-	helper = cache --timeout=30000
+	helper  = manager
 [core]
-	editor = /usr/bin/vim
-	excludesfile = /Users/kunal_patel/.gitignore_global
+	# editor = /usr/bin/vim
+	excludesfile = "%USERPROFILE%/.gitignore_global"
 	autocrlf = input
 [filter "lfs"]
 	clean = git-lfs clean %f

@@ -55,7 +55,7 @@ set backspace=eol,start,indent
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -149,7 +149,7 @@ set ffs=unix,dos,mac
 set t_Co=256
 " color wombat256mod
 " colorscheme github
-colorscheme predawn
+" colorscheme predawn
 
 """""""""""""""""""""""""""""""""""""""""""""""
 """ plugin related commands
@@ -183,8 +183,8 @@ au BufNewFile,BufRead *.gradle set filetype=groovy
 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=$HOME/.vim/bundle/Vundle.vim/
+call vundle#begin('$HOME/.vim/bundle/')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -195,6 +195,6 @@ Plugin 'davidhalter/jedi-vim'
 
 Plugin 'vim-airline/vim-airline'
 
-call vundle#end() 
+call vundle#end()
 filetype plugin indent on
 
