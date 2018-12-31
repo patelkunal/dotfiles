@@ -129,10 +129,11 @@ syntax on
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guioptions+=T
+    set guioptions-=T
     set guioptions+=e
     set t_Co=256
     set guitablabel=%M\ %t
+	set guifont=Consolas:h11:cDEFAULT
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -147,9 +148,7 @@ set ffs=unix,dos,mac
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-" color wombat256mod
-" colorscheme github
-" colorscheme predawn
+colorscheme predawn
 
 """""""""""""""""""""""""""""""""""""""""""""""
 """ plugin related commands
@@ -183,8 +182,8 @@ au BufNewFile,BufRead *.gradle set filetype=groovy
 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=$HOME/.vim/bundle/Vundle.vim/
-call vundle#begin('$HOME/.vim/bundle/')
+set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+call vundle#begin('$HOME/vimfiles/bundle/')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
