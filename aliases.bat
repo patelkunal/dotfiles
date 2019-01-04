@@ -9,5 +9,4 @@ doskey ~=cdh
 doskey grep=find "$1" $2
 doskey mv=ren $*
 doskey rm=del $*
-REM doskey touch=copy nul $* > nul
 doskey touch=fsutil file createNew $1 0
