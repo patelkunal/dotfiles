@@ -35,11 +35,11 @@
 [diff]
 	tool = vimdiff 
 [credential]
-	helper  = manager
+	helper = manager
 [core]
 	# editor = /usr/bin/vim
 	excludesfile = "%USERPROFILE%/.gitignore_global"
-	autocrlf = input
+	autocrlf = true
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
