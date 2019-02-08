@@ -1,3 +1,12 @@
+" find OS
+if !exists('os')
+	if has('win32') || has('win16')
+		let os = 'Windows'
+	else
+		let os = substitute(system('uname'), '\n', '', '')
+	endif
+endif
+
 "set curson position to last know position.
 autocmd BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -81,7 +90,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
-set cursorline
+
 
 """""""""""""""""""""""""""""""""""""
 """ Files, backups and undo
@@ -111,7 +120,6 @@ set preserveindent
 
 set showmatch " show matching brackets in source code
 set textwidth=99
-set colorcolumn=+1
 
 set wrap
 
@@ -140,15 +148,20 @@ endif
 set encoding=utf8
 
 " Use Unix as the standard file type
-set ffs=unix,dos,mac
+" set ffs=unix,dos,mac
 
+" set ColorColumn
 " highlight ColorColumn ctermbg=240
+" highlight ColorLine ctermbg=240
+" set CursorLine
 
 " wombat colour scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-colorscheme predawn
+" colorscheme predawn
+" colorscheme sorcerer
+
 
 """""""""""""""""""""""""""""""""""""""""""""""
 """ plugin related commands
