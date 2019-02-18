@@ -132,6 +132,22 @@ set modelines=0
 """"""""""""""""""""""""""""""""""""""'
 """ Colors and fonts
 
+if !empty($CONEMUBUILD)
+    set term=pcansi
+    set t_Co=256
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
+    set bs=indent,eol,start
+    colorscheme wombat256mod
+else
+	if exists('+termguicolors')
+		set termguicolors
+	endif
+	set t_Co=256
+	colorscheme predawn
+	" colorscheme sorcerer
+endif
+
 " Enable syntax highlighting
 syntax on
 
@@ -154,14 +170,6 @@ set encoding=utf8
 " highlight ColorColumn ctermbg=240
 " highlight ColorLine ctermbg=240
 " set CursorLine
-
-" wombat colour scheme
-" mkdir -p ~/.vim/colors && cd ~/.vim/colors
-" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-set t_Co=256
-" colorscheme predawn
-" colorscheme sorcerer
-
 
 """""""""""""""""""""""""""""""""""""""""""""""
 """ plugin related commands
