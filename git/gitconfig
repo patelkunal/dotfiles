@@ -37,7 +37,7 @@
 [credential]
 	helper = manager
 [core]
-	# editor = /usr/bin/vim
+	editor = vim # /usr/bin/vim
 	excludesfile = "%USERPROFILE%/.gitignore_global"
 	autocrlf = true
 	preloadindex = true
@@ -49,3 +49,6 @@
 	process = git-lfs filter-process
 [gc]
 	auto = 256
+[user]
+	name = Kunal
+	email = kupa@microsoft.com

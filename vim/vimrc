@@ -217,4 +217,3 @@ Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 filetype plugin indent on
-
