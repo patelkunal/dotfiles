@@ -17,3 +17,4 @@ doskey vse="\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7
 doskey vs="\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv" $*
 doskey vsne="\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv" $*
 doskey npp="\Program Files\Notepad++\notepad++.exe" $*
+doskey npp="%NPP_HOME%\notepad++.exe" $*

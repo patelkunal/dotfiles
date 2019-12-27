@@ -37,7 +37,7 @@
 [credential]
 	helper = manager
 [core]
-	editor = vim # /usr/bin/vim
+	editor = vim -u NONE # subl --wait # /usr/bin/vim
 	excludesfile = "%USERPROFILE%/.gitignore_global"
 	autocrlf = true
 	preloadindex = true
