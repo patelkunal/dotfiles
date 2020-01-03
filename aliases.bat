@@ -18,3 +18,6 @@ doskey vs="\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\
 doskey vsne="\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\devenv" $*
 doskey npp="\Program Files\Notepad++\notepad++.exe" $*
 doskey npp="%NPP_HOME%\notepad++.exe" $*
+REM doskey vsdev=call \\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\Tools\\VsDevCmd.bat
+doskey vsdev=call %USERPROFILE%\vsdev.bat
+doskey foo=call %USERPROFILE%\foo.bat
