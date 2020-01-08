@@ -30,3 +30,12 @@ In debian, please enable locale with UTF-8.
 dpkg -l locales
 /usr/sbin/dpkg-reconfigure locales # and select en_US with UTF-8
 ````
+
+### Windows settings - 
+
+mklink /H .gitconfig %USERPROFILE%\dotfiles\git\gitconfig
+
+##### add following line in %USERPROFILE%\_vimrc
+source $HOME/dotfiles/vim/vimrc                                                                                                         source $VIMRUNTIME/vimrc_example.vim
+
+note: when installing vim, make sure to select default settings.
