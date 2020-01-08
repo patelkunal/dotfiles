@@ -99,6 +99,7 @@ set tm=500
 set nobackup
 set nowb
 set noswapfile
+set noundofile
 
 set nocompatible
 
@@ -144,7 +145,7 @@ else
 		set termguicolors
 	endif
 	set t_Co=256
-	colorscheme predawn
+	" colorscheme predawn
 	" colorscheme sorcerer
 endif
 
@@ -203,17 +204,18 @@ au BufNewFile,BufRead *.gradle set filetype=groovy
 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
-call vundle#begin('$HOME/vimfiles/bundle/')
+" set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+" call vundle#begin('$HOME/vimfiles/bundle/')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'davidhalter/jedi-vim'
 
-"Plugin 'patelkunal/vim-conda'
+" Plugin 'patelkunal/vim-conda'
 
-Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline'
 
-call vundle#end()
+" call vundle#end()
+
 filetype plugin indent on
